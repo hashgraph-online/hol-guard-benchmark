@@ -1,0 +1,27 @@
+name: Feature request
+description: Propose a benchmark scenario, schema, adapter, or documentation improvement.
+title: "[enhancement] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the evidence gap or reproducibility problem.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the scenario, adapter, schema, or workflow change.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Measurement and safety boundary
+      description: Explain what the proposal would measure and what it would not prove.
+    validations:
+      required: true

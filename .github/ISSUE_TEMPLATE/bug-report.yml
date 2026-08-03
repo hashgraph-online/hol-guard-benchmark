@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducibility, schema, export, or documentation defect.
+title: "[bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a reproducible defect in the fixture runner, exports, schema, or methodology.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Include expected behavior and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the exact Bun command, commit, and run identifier.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Bun version, and repository commit.
+    validations:
+      required: true

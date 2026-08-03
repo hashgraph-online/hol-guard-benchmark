@@ -1,0 +1,29 @@
+{
+  "name": "@hashgraph-online/hol-guard-benchmark",
+  "version": "0.1.0",
+  "description": "Open, reproducible fixture benchmark data and tooling for HOL Guard.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "files": [
+    "src",
+    "scripts",
+    "schema",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "benchmark": "tsx scripts/benchmark.ts",
+    "benchmark:validate": "tsx scripts/benchmark-validate.ts",
+    "data:json": "bun run benchmark -- --fixture --json --output data/fixture-run-2026-07-26-001.json",
+    "data:csv": "bun run benchmark -- --fixture --csv --output data/fixture-run-2026-07-26-001.csv",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.23",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.8"
+  }
+}

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "HOL Guard Benchmark"
+message: "If you reference the HOL Guard fixture benchmark, please cite this repository and the specific run identifier."
+type: software
+authors:
+  - name: "Hashgraph Online"
+url: "https://github.com/hashgraph-online/hol-guard-benchmark"
+repository-code: "https://github.com/hashgraph-online/hol-guard-benchmark"
+license: "Apache-2.0"

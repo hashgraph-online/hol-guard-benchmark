@@ -1,0 +1,9 @@
+node_modules/
+.bun/
+coverage/
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log

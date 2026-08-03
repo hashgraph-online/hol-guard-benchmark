@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability reporting
+    url: https://github.com/hashgraph-online/hol-guard-benchmark/blob/main/SECURITY.md
+    about: Report vulnerabilities privately using SECURITY.md.
+  - name: HOL Guard methodology
+    url: https://hol.org/guard/research/methodology
+    about: Read the public methodology and evidence limitations.
