@@ -1,26 +1,7 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "05:00"
-      timezone: "America/New_York"
-    open-pull-requests-limit: 10
-    labels:
-      - "dependencies"
-    commit-message:
-      prefix: "deps(npm)"
-    groups:
-      npm-patch-minor:
-        update-types:
-          - "minor"
-          - "patch"
-      npm-major:
-        update-types:
-          - "major"
-
+  # Dependabot's npm updater does not rewrite bun.lock. Update Bun dependencies
+  # with Bun so the package manifest and lockfile remain in the same change.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
