@@ -54,6 +54,10 @@ bun run typecheck
 
 The current release demonstrates that a documented fixture matrix can be normalized and published reproducibly. It does not demonstrate live harness behavior, exploit resistance, real-world false-positive rates, network/container/OS isolation, or independent review. Future live adapters must publish their harness versions, setup steps, raw observations, environment, data-egress statement, and a separate run identifier rather than silently replacing fixture output.
 
+## Dataset
+
+Runtime fixtures in the [HOL Plugin Security dataset on Hugging Face](https://huggingface.co/datasets/HashgraphOnline/hol-plugin-security) are modeled, not live attacks; a scan is not a safety guarantee, and HOL publishes this rather than independent third-party validation.
+
 ## Contributing and security
 
 Read [CONTRIBUTING.md](./CONTRIBUTING.md) before changing scenarios or result semantics. Report security issues privately using [SECURITY.md](./SECURITY.md); do not open a public issue for a vulnerability.
